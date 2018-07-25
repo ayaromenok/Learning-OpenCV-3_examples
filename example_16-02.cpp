@@ -10,7 +10,7 @@
 #include <cstdlib>
 #include <fstream>
 #include <algorithm>
-#include <opencv2/opencv.hpp>
+#include <opencv/cv.hpp>
 #include <opencv2/objdetect.hpp>
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
@@ -182,8 +182,8 @@ int main(int argc, char** argv) {
     string img_file1(argv[3]);
     string img_file2(argv[4]);
 
-    Mat img1 = cv::imread(img_file1, CV_LOAD_IMAGE_COLOR);
-    Mat img2 = cv::imread(img_file2, CV_LOAD_IMAGE_COLOR);
+    Mat img1 = cv::imread(img_file1, cv::IMREAD_COLOR);
+    Mat img2 = cv::imread(img_file2, cv::IMREAD_COLOR);
 
     if (img1.channels() != 1) {
         cvtColor(img1, img1, cv::COLOR_RGB2GRAY);

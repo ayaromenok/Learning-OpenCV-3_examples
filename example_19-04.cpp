@@ -1,5 +1,5 @@
 // Example 19-4. Two-dimensional line fitting
-#include <opencv2/opencv.hpp>
+#include <opencv/cv.hpp>
 #include <iostream>
 #include <math.h>
 
