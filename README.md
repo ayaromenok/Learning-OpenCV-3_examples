@@ -1,5 +1,10 @@
 # Learning OpenCV 3
 
+### Updated to build OpenCV 4
+ - use <opencv/cv.hpp> heade instead of <opencv2/opencv.hpp>
+ - changes of C-style defines to C++ (CV_WINDOW_AUTOSIZE to cv::WINDOW_AUTOSIZE)
+ - some spell\wrong text info
+ 
 ## INTRO
 
 This is the example code that accompanies Learning OpenCV 3 by Adrian Kaehler and Gary Bradski ([9781491937990](http:*shop.oreilly.com/product/0636920044765.do)).

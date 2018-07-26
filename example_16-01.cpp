@@ -2,7 +2,7 @@
 //
 #include <iostream>
 #include <vector>
-#include <opencv2/opencv.hpp>
+#include <opencv/cv.hpp>
 
 static const int MAX_CORNERS = 1000;
 using std::cout;
@@ -26,11 +26,11 @@ int main(int argc, char** argv) {
     // allocate the images and other structures we will need for
     // results.
     //
-    cv::Mat imgA = cv::imread(argv[1], CV_LOAD_IMAGE_GRAYSCALE);
-    cv::Mat imgB = cv::imread(argv[2], CV_LOAD_IMAGE_GRAYSCALE);
+    cv::Mat imgA = cv::imread(argv[1], cv::IMREAD_GRAYSCALE);
+    cv::Mat imgB = cv::imread(argv[2], cv::IMREAD_GRAYSCALE);
     cv::Size img_sz = imgA.size();
     int win_size = 10;
-    cv::Mat imgC = cv::imread(argv[2], CV_LOAD_IMAGE_UNCHANGED);
+    cv::Mat imgC = cv::imread(argv[2], cv::IMREAD_UNCHANGED);
     // The first thing we need to do is get the features
     // we want to track.
     //

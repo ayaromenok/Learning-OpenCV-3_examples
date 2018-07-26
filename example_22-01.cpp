@@ -4,7 +4,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <fstream>
-#include <opencv2/opencv.hpp>
+#include <opencv/cv.hpp>
 #include "opencv2/objdetect.hpp"
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
@@ -78,7 +78,7 @@ int main(int argc, char** argv) {
         exit(1);
     }
     string image_file_name = string(argv[1]);
-    cv::Mat img = cv::imread(image_file_name, CV_LOAD_IMAGE_COLOR);
+    cv::Mat img = cv::imread(image_file_name, cv::IMREAD_COLOR);
     string cascade_file_name = string(argv[2]);
     cv::Ptr<cv::CascadeClassifier> cascade(new cv::CascadeClassifier(cascade_file_name));
     detectAndDraw(img, cascade);

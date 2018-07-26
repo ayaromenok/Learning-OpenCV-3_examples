@@ -1,5 +1,5 @@
 //Example 20-02. Using the Mahalanobis distance for classification
-#include <opencv2/opencv.hpp>
+#include <opencv/cv.hpp>
 #include <iostream>
 #include <ctime>
 #include <algorithm>

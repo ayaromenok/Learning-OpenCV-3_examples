@@ -1,6 +1,6 @@
 //Exercises_8_1.cpp Exercises at end of Chapter 8
 //1
-#include <opencv2/opencv.hpp>
+#include <opencv/cv.hpp>
 #include <iostream>
 
 using namespace cv;
@@ -44,7 +44,7 @@ int main( int argc, const char** argv )
 		cout << "Could not open " << argv[1] << endl;
 		return 1;
 	}
-	double rate=capture.get(CV_CAP_PROP_FPS);
+	double rate=capture.get(cv::CAP_PROP_FPS);
 	Mat MatFrame;
 	Mat MatGray;
 	Mat MatCanny;
