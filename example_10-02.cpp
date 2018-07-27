@@ -20,9 +20,9 @@ void sum_rgb( const cv::Mat& src, cv::Mat& dst ) {
 	cv::accumulate(g, s);
 	cv::accumulate(r, s);
 
-	// Truncate values above 100 and rescale into dst.
+	// Truncate values above 300 and rescale into dst.
 	//
-	cv::threshold( s, s, 100, 100, cv::THRESH_TRUNC );
+	cv::threshold( s, s, 300, 100, cv::THRESH_TRUNC );
 	s.convertTo(dst, b.type());
 }
 
