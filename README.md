@@ -4,6 +4,7 @@
  - use <opencv/cv.hpp> heade instead of <opencv2/opencv.hpp>
  - changes of C-style defines to C++ (CV_WINDOW_AUTOSIZE to cv::WINDOW_AUTOSIZE)
  - some spell\wrong text info
+ - tested on Linux/amd64(ubuntu) and Linux/armv-a(raspbery pi)
  
 ## INTRO
 
