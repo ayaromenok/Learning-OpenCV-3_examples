@@ -5,7 +5,10 @@
  - changes of C-style defines to C++ (CV_WINDOW_AUTOSIZE to cv::WINDOW_AUTOSIZE)
  - some spell\wrong text info
  - tested on Linux/amd64(ubuntu) and Linux/armv-a(raspbery pi)
- 
+
+### ToDo - OSX issues:
+ - 16-02 - #include xfeature2d.hpp
+ - 9-04 -  #ifdef for #include <GL/gl.h> on OSX
 ## INTRO
 
 This is the example code that accompanies Learning OpenCV 3 by Adrian Kaehler and Gary Bradski ([9781491937990](http:*shop.oreilly.com/product/0636920044765.do)).
